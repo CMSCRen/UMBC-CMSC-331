@@ -1,0 +1,18 @@
+(cons 'A 'B)
+(cons (cons 'A 'B) null)
+(cons 'A (cons (cons 'B null) null))
+(cons (cons (cons 'A null) null) (cons (cons 'B null) null))
+(cons 'A (cons (cons 'B null) (cons (cons (cons 'C null) null) null)))
+
+(list 'A 'B)
+(list (list 'A 'B) )
+(list 'A (list 'B))
+(list (list(list 'A)) (list 'B))
+(list 'A (list 'B) (list (list 'C)))
+
+
+(car (cdr S))
+(car (car (cdr S)))
+(car (car (cdr (cdr S))))
+(car (cdr (car (cdr S))))
+(car (car (cdr  (cdr S))))
